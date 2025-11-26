@@ -23,32 +23,61 @@
     <meta itemprop="description" content="Il Corso #1 per implementare l'intelligenza artificiale nella tua agenzia immobiliare. Con quiz, risorse PDF ed esercitazioni pratiche.">
     <meta name="copyright" content="2025 Alex Ledda">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #f1f5f9; line-height: 1.6; margin: 0; }
-        html { scroll-behavior: smooth; }
-        nav { position: sticky; top: 0; background: rgba(2, 6, 23, 0.95); border-bottom: 1px solid #0284c7; padding: 1rem 0; z-index: 1000;}
+        html { scroll-behavior: smooth;}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #E7E7E7;
+            color: #1b1b1b;
+            line-height: 1.6;
+            margin: 0;
+        }
+        nav { position: sticky; top: 0; background: #006641; border-bottom: 2px solid #ffffff; padding: 1rem 0; z-index: 1000;}
         .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center;}
-        .nav-logo { font-size: 24px; font-weight: bold; color: #0284c7;display:flex;align-items:center;gap:8px;}
+        .nav-logo { font-size: 24px; font-weight: bold; color: #ffffff;display:flex;align-items:center;gap:8px;}
         .nav-links { display: flex; gap: 2rem; list-style: none;}
-        .nav-links a { color: #cbd5e1; text-decoration: none; transition: color 0.3s;}
-        .nav-links a:hover { color: #0284c7;}
-        .nav-cta { background: #0284c7; color: #020617; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: all 0.3s;}
-        .nav-cta:hover { background: #38bdf8; transform: translateY(-2px);}
+        .nav-links a { color: #ffffff; text-decoration: none; transition: color 0.3s;}
+        .nav-links a:hover { color: #FFD600; }
+        .nav-cta { background: #FFD600; color: #006641; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: all 0.3s;}
+        .nav-cta:hover { background: #ffffff; color: #006641; border: 1.5px solid #FFD600;}
         .hero { max-width: 1200px; margin: 0 auto; padding: 80px 2rem 60px; text-align: center;}
-        .hero h1 { font-size: 56px; color: #38bdf8; margin-bottom: 20px; text-shadow: 0 2px 10px rgba(56, 189, 248, 0.3);}
-        .hero .tagline { font-size: 24px; color: #cbd5e1; margin-bottom: 40px;}
-        .hero .description { font-size: 18px; color: #94a3b8; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;}
+        .hero h1 { font-size: 56px; color: #006641; margin-bottom: 20px; }
+        .hero .tagline { font-size: 24px; color: #1b1b1b; margin-bottom: 40px;}
+        .hero .description { font-size: 18px; color: #444; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;}
         .cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:60px;}
         .btn{padding:15px 40px;border:none;border-radius:8px;font-size:16px;font-weight:bold;cursor:pointer;transition:all 0.3s ease;text-decoration:none;display:inline-block;}
-        .btn-primary{background:#0284c7;color:#020617;}
-        .btn-primary:hover{background:#38bdf8;transform:translateY(-3px);box-shadow:0 10px 25px rgba(2,132,199,0.4);}
-        .btn-secondary{background:transparent;border:2px solid #0284c7;color:#0284c7;}
-        .btn-secondary:hover{background:#0284c7;color:#020617;}
-        .hero-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:2rem;margin-top:60px;padding:40px;background:rgba(30,41,59,0.5);border-radius:12px;border:1px solid #0284c7;}
-        .stat{text-align:center;}.stat-value{font-size:32px;color:#0284c7;font-weight:bold;}.stat-label{font-size:14px;color:#94a3b8;margin-top:5px;}
+        .btn-primary{background:#006641;color:#fff;}
+        .btn-primary:hover{background:#009b5c;}
+        .btn-secondary{background:transparent;border:2px solid #006641;color:#006641;}
+        .btn-secondary:hover{background:#006641;color:#fff;}
+        .hero-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:2rem;margin-top:60px;padding:40px;background:#fff;border-radius:12px;border:1px solid #bbb;}
+        .stat{text-align:center;}
+        .stat-value{font-size:32px;color:#006641;font-weight:bold;}
+        .stat-label{font-size:14px;color:#444;margin-top:5px;}
+        section{max-width:1200px;margin:0 auto;padding:80px 2rem;}
+        section h2{font-size:42px;color:#006641;margin-bottom:50px;text-align:center;}
+        section h3{font-size:24px;color:#006641;margin-bottom:20px;}
+        .modules-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;}
+        .module-card{background:#fff;border: 1.5px solid #006641;border-radius:12px;padding:30px;transition:all 0.3s;}
+        .module-card:hover{transform:translateY(-5px);box-shadow:0 10px 24px rgba(0,102,65,0.13);}
+        .module-card h3{margin-bottom:15px;color:#006641;}
+        .module-card p{color:#1b1b1b;font-size:14px;line-height:1.6;}
+        .module-number{display:inline-block;background:#E7E7E7;color:#006641;width:40px;height:40px;border-radius:50%;text-align:center;line-height:40px;font-weight:bold;margin-bottom:15px;}
+        footer{background:#006641;border-top:2px solid #FFD600;padding:50px 2rem 20px;margin-top:80px;}
+        .footer-container{max-width:1200px;margin:0 auto;}
+        .footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:3rem;margin-bottom:40px;}
+        .footer-section h4{color:#FFD600;margin-bottom:20px;}
+        .footer-section ul{list-style:none;}
+        .footer-section ul li{margin-bottom:10px;}
+        .footer-section ul a{color:#ffffff;text-decoration:none;transition:color 0.3s;}
+        .footer-section ul a:hover{color:#FFD600;}
+        .footer-bottom{border-top:1px solid #FFF176;padding-top:30px;text-align:center;color:#E7E7E7;font-size:14px;}
+        /* Responsive */
         @media (max-width: 768px) {
             .hero h1 { font-size: 36px;}
             .hero .tagline { font-size: 18px;}
             .nav-links { display: none;}
+            section { padding: 50px 1rem;}
+            section h2 { font-size: 32px;}
             .cta-buttons { flex-direction: column;}
             .btn { width: 100%;}
         }
@@ -68,10 +97,9 @@
             <a href="Corso_AI_RealEstate_Completo.html" class="nav-cta">Accedi al Corso →</a>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <section class="hero">
-        <img src="cover copertina.png" alt="Copertina Corso AI Real Estate" style="max-width:520px;width:95%;border-radius:20px;box-shadow:0 8px 32px #0284c7ab;margin-bottom:35px;border:4px solid #0284c7;">
+        <img src="cover copertina.png" alt="Copertina Corso AI Real Estate" style="max-width:520px;width:95%;border-radius:20px;box-shadow:0 8px 32px #00664191;margin-bottom:35px;border:4px solid #006641;">
         <h1>Intelligenza Artificiale nel Real Estate</h1>
         <p class="tagline">Automazione, Strategie digitali e Certificazione 2025</p>
         <p class="description">
@@ -82,4 +110,115 @@
             <button class="btn btn-secondary" onclick="scrollToSection('risorse')">📥 Scarica Risorse</button>
         </div>
         <div style="margin:30px auto 0;display:flex;justify-content:center;gap:18px;flex-wrap:wrap;">
-            <img src="https://img.shields.io/badge/Nuovo-2025-%
+            <img src="https://img.shields.io/badge/Nuovo-2025-%23006641?style=for-the-badge" alt="aggiornato">
+            <img src="https://img.shields.io/badge/Gratis%20100%25-%23006641?style=for-the-badge&labelColor=%23e7e7e7" alt="Gratis">
+            <img src="https://img.shields.io/badge/Certificato%20finale-Disponibile-%23006641?style=for-the-badge&labelColor=%23FFD600" alt="Certificato incluso">
+        </div>
+        <div class="hero-stats">
+            <div class="stat"><div class="stat-value">8</div><div class="stat-label">Moduli Completi</div></div>
+            <div class="stat"><div class="stat-value">86</div><div class="stat-label">Slide Didattiche</div></div>
+            <div class="stat"><div class="stat-value">100+</div><div class="stat-label">Quiz Interattivi</div></div>
+            <div class="stat"><div class="stat-value">∞</div><div class="stat-label">Certificati</div></div>
+        </div>
+    </section>
+
+    <!-- Sezione Moduli -->
+    <section id="moduli">
+        <h2>I Moduli del Corso</h2>
+        <div class="modules-grid">
+            <div class="module-card fade-in">
+                <div class="module-number">1</div>
+                <h3>Fondamenti di AI</h3>
+                <p>Scopri le basi dell'intelligenza artificiale, dalla storia ai modelli moderni e le loro applicazioni.</p>
+            </div>
+            <div class="module-card fade-in">
+                <div class="module-number">2</div>
+                <h3>AI e Real Estate Trends</h3>
+                <p>Esplora i trend attuali e le applicazioni pratiche dell'AI nel settore immobiliare nel 2025.</p>
+            </div>
+            <div class="module-card fade-in">
+                <div class="module-number">3</div>
+                <h3>Automazione Processi</h3>
+                <p>Impara come automatizzare i processi chiave della tua agenzia immobiliare con AI.</p>
+            </div>
+            <div class="module-card fade-in">
+                <div class="module-number">4</div>
+                <h3>Analisi Dati Avanzata</h3>
+                <p>Utilizza i dati per prendere decisioni strategiche e prevedere i trend di mercato.</p>
+            </div>
+            <div class="module-card fade-in">
+                <div class="module-number">5</div>
+                <h3>Content Creation AI</h3>
+                <p>Crea contenuti visivi e testuali di qualità superiore con gli strumenti AI.</p>
+            </div>
+            <div class="module-card fade-in">
+                <div class="module-number">6</div>
+                <h3>Implementazione Pratica</h3>
+                <p>Implementa strumenti AI concreti nel tuo workflow quotidiano con step-by-step guide.</p>
+            </div>
+            <div class="module-card fade-in">
+                <div class="module-number">7</div>
+                <h3>Normative e Etica</h3>
+                <p>Comprendi la normativa GDPR, l'etica e la privacy nell'uso dell'AI nel real estate.</p>
+            </div>
+            <div class="module-card fade-in">
+                <div class="module-number">8</div>
+                <h3>Casi Studio Reali</h3>
+                <p>Analizza case study reali di agenzie immobiliari che hanno implementato AI con successo.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Corsi</h4>
+                    <ul>
+                        <li><a href="#moduli">Visualizza Moduli</a></li>
+                        <li><a href="#risorse">Risorse Gratuite</a></li>
+                        <li><a href="#video">Video Tutorial</a></li>
+                        <li><a href="Corso_AI_RealEstate_Completo.html">Accedi al Corso</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Supporto</h4>
+                    <ul>
+                        <li><a href="#">Contattaci</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Termini di Servizio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informazioni</h4>
+                    <ul>
+                        <li><a href="#">Chi Siamo</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Partner</a></li>
+                        <li><a href="#">Certificazioni</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Seguici</h4>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter/X</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Corso AI nel Real Estate. Tutti i diritti riservati. | Creato per professionisti del real estate</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) element.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
