@@ -3,48 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Corso AI Real Estate - Automazione Agenzia Immobiliare | Online 2025</title>
     <meta name="description" content="Trasforma la tua agenzia immobiliare con l'intelligenza artificiale. Corso online interattivo 2025: lezioni pratiche, quiz, risorse e certificato finale.">
     <meta name="keywords" content="corso AI immobiliare, corso intelligenza artificiale, corso online real estate, corso proptech, automazione agenzia immobiliare, AI per agenti immobiliari, corso proptech 2025">
     <meta name="author" content="Alex Ledda">
-
-    <!-- Open Graph / Facebook / WhatsApp -->
+    <!-- Social / SEO meta -->
     <meta property="og:title" content="Corso AI Real Estate - Automazione e Intelligenza Artificiale 2025">
     <meta property="og:description" content="Scopri come l’AI trasforma il tuo business immobiliare con lezioni, quiz e certificato. Inizia gratis!">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://TuoUsername.github.io/ai-real-estate-course/">
-    <meta property="og:image" content="https://TuoUsername.github.io/ai-real-estate-course/cover%20copertina.png">
-
-    <!-- Twitter Card -->
+    <meta property="og:url" content="https://AlexLedda.github.io/ai-real-estate-course/">
+    <meta property="og:image" content="https://AlexLedda.github.io/ai-real-estate-course/cover%20copertina.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Corso AI Real Estate - Automazione Immobiliare">
     <meta name="twitter:description" content="Corso online interattivo per agenti immobiliari: impara AI, quiz, certificato e risorse pratiche.">
-    <meta name="twitter:image" content="https://TuoUsername.github.io/ai-real-estate-course/cover%20copertina.png">
-
+    <meta name="twitter:image" content="https://AlexLedda.github.io/ai-real-estate-course/cover%20copertina.png">
     <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="canonical" href="https://TuoUsername.github.io/ai-real-estate-course/">
-
-    <!-- Altri tag microdata/SEO -->
-    <meta name="robots" content="index, follow">
-    <meta itemprop="name" content="Corso AI Real Estate - Automazione Agenzia Immobiliare 2025">
-    <meta itemprop="description" content="Il Corso #1 per implementare l'intelligenza artificiale nella tua agenzia immobiliare. Con quiz, risorse PDF ed esercitazioni pratiche.">
-    <meta name="copyright" content="2025 Alex Ledda">
-
+    <link rel="canonical" href="https://AlexLedda.github.io/ai-real-estate-course/">
     <style>
-        /* Il tuo CSS già ottimizzato rimane invariato, incollalo tra questi tag style oppure lascialo come lo avevi */
-        /* ... */
-        /* (per rimanere concisi, qui ometto il CSS, ma puoi incollare quello già usato, senza modifiche) */
+        /* INIZIO CSS GENERALE */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #f1f5f9; line-height: 1.6; margin: 0; }
+        html { scroll-behavior: smooth; }
+        nav { position: sticky; top: 0; background: rgba(2, 6, 23, 0.95); border-bottom: 1px solid #0284c7; padding: 1rem 0; z-index: 1000;}
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center;}
+        .nav-logo { font-size: 24px; font-weight: bold; color: #0284c7;display:flex;align-items:center;gap:8px;}
+        .nav-links { display: flex; gap: 2rem; list-style: none;}
+        .nav-links a { color: #cbd5e1; text-decoration: none; transition: color 0.3s;}
+        .nav-links a:hover { color: #0284c7;}
+        .nav-cta { background: #0284c7; color: #020617; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: all 0.3s;}
+        .nav-cta:hover { background: #38bdf8; transform: translateY(-2px);}
+        .hero { max-width: 1200px; margin: 0 auto; padding: 80px 2rem 60px; text-align: center;}
+        .hero h1 { font-size: 56px; color: #38bdf8; margin-bottom: 20px; text-shadow: 0 2px 10px rgba(56, 189, 248, 0.3);}
+        .hero .tagline { font-size: 24px; color: #cbd5e1; margin-bottom: 40px;}
+        .hero .description { font-size: 18px; color: #94a3b8; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;}
+        .cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:60px;}
+        .btn{padding:15px 40px;border:none;border-radius:8px;font-size:16px;font-weight:bold;cursor:pointer;transition:all 0.3s ease;text-decoration:none;display:inline-block;}
+        .btn-primary{background:#0284c7;color:#020617;}
+        .btn-primary:hover{background:#38bdf8;transform:translateY(-3px);box-shadow:0 10px 25px rgba(2,132,199,0.4);}
+        .btn-secondary{background:transparent;border:2px solid #0284c7;color:#0284c7;}
+        .btn-secondary:hover{background:#0284c7;color:#020617;}
+        .hero-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:2rem;margin-top:60px;padding:40px;background:rgba(30,41,59,0.5);border-radius:12px;border:1px solid #0284c7;}
+        .stat{text-align:center;}.stat-value{font-size:32px;color:#0284c7;font-weight:bold;}.stat-label{font-size:14px;color:#94a3b8;margin-top:5px;}
+        section{max-width:1200px;margin:0 auto;padding:80px 2rem;}
+        section h2{font-size:42px;color:#38bdf8;margin-bottom:50px;text-align:center;}
+        section h3{font-size:24px;color:#0284c7;margin-bottom:20px;}
+        .modules-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;}
+        .module-card{background:linear-gradient(135deg,#1e293b 0%,#0f172a 100%);border:1px solid #0284c7;border-radius:12px;padding:30px;transition:all 0.3s ease;}
+        .module-card:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(2,132,199,0.3);}
+        .module-card h3{margin-bottom:15px;color:#38bdf8;}
+        .module-card p{color:#cbd5e1;font-size:14px;line-height:1.6;}
+        .module-number{display:inline-block;background:#0284c7;color:#020617;width:40px;height:40px;border-radius:50%;text-align:center;line-height:40px;font-weight:bold;margin-bottom:15px;}
+        .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:40px;}
+        .feature-box{background:rgba(30,41,59,0.5);border:1px solid #0284c7;padding:30px;border-radius:12px;text-align:center;}
+        .feature-icon{font-size:48px;margin-bottom:20px;}
+        .feature-box h4{color:#0284c7;margin-bottom:15px;font-size:18px;}
+        .feature-box p{color:#cbd5e1;font-size:14px;}
+        .resources-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:40px;}
+        .resource-card{background:linear-gradient(135deg,#1e293b 0%,#0f172a 100%);border:2px solid #0284c7;padding:30px;border-radius:12px;text-align:center;transition:all 0.3s ease;}
+        .resource-card:hover{transform:scale(1.05);box-shadow:0 10px 30px rgba(2,132,199,0.3);}
+        .resource-icon{font-size:48px;margin-bottom:15px;}
+        .resource-card h4{color:#38bdf8;margin-bottom:10px;font-size:18px;}
+        .resource-card p{color:#cbd5e1;font-size:14px;margin-bottom:20px;}
+        .resource-card .btn{width:100%;}
+        .videos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:40px;}
+        .video-card{background:#1e293b;border:1px solid #0284c7;border-radius:12px;overflow:hidden;transition:all 0.3s ease;}
+        .video-card:hover{box-shadow:0 10px 30px rgba(2,132,199,0.3);}
+        .video-thumbnail{width:100%;height:200px;background:linear-gradient(135deg,#0284c7,#38bdf8);display:flex;align-items:center;justify-content:center;font-size:48px;}
+        .video-info{padding:20px;}
+        .video-info h4{color:#38bdf8;margin-bottom:10px;}
+        .video-info p{color:#cbd5e1;font-size:14px;}
+        .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:40px;}
+        .testimonial-card{background:linear-gradient(135deg,#1e293b 0%,#0f172a 100%);border:1px solid #0284c7;padding:30px;border-radius:12px;}
+        .testimonial-quote{color:#cbd5e1;font-style:italic;margin-bottom:20px;font-size:16px;line-height:1.6;}
+        .testimonial-author{color:#38bdf8;font-weight:bold;}.testimonial-role{color:#94a3b8;font-size:14px;}
+        .stars{color:#fbbf24;margin-bottom:15px;}
+        footer{background:#020617;border-top:1px solid #0284c7;padding:50px 2rem 20px;margin-top:80px;}
+        .footer-container{max-width:1200px;margin:0 auto;}
+        .footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:3rem;margin-bottom:40px;}
+        .footer-section h4{color:#0284c7;margin-bottom:20px;}
+        .footer-section ul{list-style:none;}
+        .footer-section ul li{margin-bottom:10px;}
+        .footer-section ul a{color:#cbd5e1;text-decoration:none;transition:color 0.3s;}
+        .footer-section ul a:hover{color:#0284c7;}
+        .footer-bottom{border-top:1px solid #334155;padding-top:30px;text-align:center;color:#64748b;font-size:14px;}
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px;}
+            .hero .tagline { font-size: 18px;}
+            .nav-links { display: none;}
+            section { padding: 50px 1rem;}
+            section h2 { font-size: 32px;}
+            .cta-buttons { flex-direction: column;}
+            .btn { width: 100%;}
+        }
+        @keyframes fadeInUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}.fade-in{animation:fadeInUp 0.6s ease-out;}
+        .modal{display:none;position:fixed;z-index:2000;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.8);}
+        .modal-content{background-color:#1e293b;margin:5% auto;padding:30px;border:1px solid #0284c7;border-radius:12px;width:90%;max-width:600px;max-height:80vh;overflow-y:auto;}
+        .close{color:#0284c7;float:right;font-size:28px;font-weight:bold;cursor:pointer;}
+        .close:hover{color:#38bdf8;}
+        .modal h2{color:#38bdf8;margin-bottom:20px;}
+        .modal p{color:#cbd5e1;margin-bottom:15px;}
+        .modal input,.modal textarea{width:100%;padding:10px;margin-bottom:15px;background:#0f172a;border:1px solid #0284c7;color:#f1f5f9;border-radius:6px;font-family:inherit;}
+        .modal input:focus,.modal textarea:focus{outline:none;border-color:#38bdf8;box-shadow:0 0 10px rgba(56,189,248,0.3);}
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="nav-logo">
-                🤖 AI Real Estate
-                <img src="favicon.png" alt="Favicon" style="height:22px;vertical-align:middle;">
-            </div>
+            <div class="nav-logo">🤖 AI Real Estate <img src="favicon.png" alt="Favicon" style="height:22px;vertical-align:middle;"></div>
             <ul class="nav-links">
                 <li><a href="#moduli">Moduli</a></li>
                 <li><a href="#risorse">Risorse</a></li>
@@ -73,27 +138,48 @@
             <img src="https://img.shields.io/badge/Certificato%20finale-Disponibile-%2310b981?style=for-the-badge" alt="Certificato finale" title="Certificato incluso">
         </div>
         <div class="hero-stats">
-            <div class="stat">
-                <div class="stat-value">8</div>
-                <div class="stat-label">Moduli Completi</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value">86</div>
-                <div class="stat-label">Slide Didattiche</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value">100+</div>
-                <div class="stat-label">Quiz Interattivi</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value">∞</div>
-                <div class="stat-label">Certificati</div>
-            </div>
+            <div class="stat"><div class="stat-value">8</div><div class="stat-label">Moduli Completi</div></div>
+            <div class="stat"><div class="stat-value">86</div><div class="stat-label">Slide Didattiche</div></div>
+            <div class="stat"><div class="stat-value">100+</div><div class="stat-label">Quiz Interattivi</div></div>
+            <div class="stat"><div class="stat-value">∞</div><div class="stat-label">Certificati</div></div>
         </div>
     </section>
 
-    <!-- Tutto il resto del tuo HTML rimane invariato da qui in poi: moduli, risorse, video, testimonial, footer e script -->
-    <!-- Puoi copiare/incollare tutto quello che avevi dopo la hero senza altre modifiche strutturali -->
+    <!-- (Incolla qui tutte le altre sezioni del template già fornite in precedenza: moduli, features, risorse, video, testimonials, footer, script) -->
+    <!-- Ricordati di lasciare invariati onclick e il JS base -->
 
+    <script>
+        // Scroll to section
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) element.scrollIntoView({ behavior: 'smooth' });
+        }
+        function downloadResource(filename) {
+            alert(`📥 Download di ${filename} preparato!\n\nIn una versione completa, il file verrebbe scaricato automaticamente.`);
+        }
+        function watchVideo(videoId) {
+            alert(`🎥 Apertura video: ${videoId}\n\nIn una versione completa, si aprirebbe un lettore video embed con il contenuto.`);
+        }
+        function openContact() {
+            document.getElementById('contactModal').style.display = 'block';
+        }
+        function closeContact() {
+            document.getElementById('contactModal').style.display = 'none';
+        }
+        function submitContact(event) {
+            event.preventDefault();
+            alert('Messaggio inviato! Ti contatteremo presto.');
+            closeContact();
+        }
+        window.onclick = function(event) {
+            const modal = document.getElementById('contactModal');
+            if (event.target === modal) { modal.style.display = 'none'; }
+        }
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -100px 0px' };
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('fade-in'); });
+        }, observerOptions);
+        document.querySelectorAll('.module-card, .testimonial-card').forEach(el => { observer.observe(el); });
+    </script>
 </body>
 </html>
